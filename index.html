@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Do You — Sonic Remedy | Soozhee</title>
+  <meta name="description" content="You Do You by Soozhee. Sonic Remedy : Audiosensory Resonance. No Regret." />
+  <meta property="og:title" content="You Do You — Sonic Remedy | Soozhee" />
+  <meta property="og:description" content="You Do You by Soozhee. Sonic Remedy : Audiosensory Resonance | No Regret." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://youdoyou.vercel.app" />
+  <meta property="og:image" content="assets/ydy-cover.PNG" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <header>
+    <div class="container nav">
+      <div class="formula-switcher">
+        <button class="logo formula-trigger" id="formulaTrigger" type="button" aria-expanded="false" aria-controls="formulaMenu">
+          <span class="logo-mark">SR</span>
+          <div class="logo-text">
+            <span class="logo-title">Sonic Remedy</span>
+            <span class="logo-sub">Audiosensory Resonance</span>
+          </div>
+          <span class="formula-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="formula-menu" id="formulaMenu" hidden>
+<a class="formula-item" href="https://sonicremedy01.vercel.app"><span>Formula 01</span><strong>Emotional Detox</strong></a>
+<a class="formula-item" href="https://sonicremedy02.vercel.app"><span>Formula 02</span><strong>Trust Your Path</strong></a>
+<span class="formula-item current" aria-current="page"><span>Formula 03</span><strong>No Regret</strong><em>Current</em></span>
+<a class="formula-item" href="https://sonicremedy04.vercel.app"><span>Formula 04</span><strong>Letting Go</strong></a>
+<a class="formula-item" href="https://sonicremedy05.vercel.app"><span>Formula 05</span><strong>Unapologetic Creation</strong></a>
+<a class="formula-item" href="https://sonicremedy06.vercel.app"><span>Formula 06</span><strong>Alien Frequencies</strong></a>
+<a class="formula-item" href="https://sonicremedy07.vercel.app"><span>Formula 07</span><strong>Sleep Sequence</strong></a>
+<a class="formula-item" href="https://sonicremedy08.vercel.app"><span>Formula 08</span><strong>Angel Recall</strong></a>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#listen">Listen</a><a href="#lyrics">Lyrics</a><a href="#about">Explore the Song</a><a href="#stream">Stream</a>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#listen" onclick="closeMobileMenu()">Listen</a>
+      <a href="#lyrics" onclick="closeMobileMenu()">Lyrics</a>
+      <a href="#about" onclick="closeMobileMenu()">Explore the Song</a>
+      <a href="#stream" onclick="closeMobileMenu()">Stream</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="listen">
+      <div class="container hero-grid">
+        <div class="hero-art"><img src="assets/ydy-cover.PNG" alt="You Do You cover art by Soozhee" class="cover-img" /></div>
+        <div class="hero-content">
+          <div class="badge">Sonic Remedy · Audiosensory Resonance</div>
+          <h1>You Do You – Remedy 08 – No.88 No Regret</h1>
+          <p class="artist">Soozhee</p>
+          <p class="tagline">You Do You.<br>No Regret.</p>
+          <div class="player-wrap">
+            <audio id="audio" src="assets/You-Do-You.mp3" preload="metadata"></audio>
+            <div class="player">
+              <button class="play-btn" id="playBtn" aria-label="Play">
+                <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+              <div class="player-meta">
+                <div class="track-title">You Do You</div>
+                <div class="progress-wrap">
+                  <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+                  <div class="time"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stream-links" id="stream">
+            <a class="stream-btn" href="#" target="_blank" rel="noopener">Spotify</a>
+            <a class="stream-btn" href="#" target="_blank" rel="noopener">Apple Music</a>
+            <a class="stream-btn" href="#" target="_blank" rel="noopener">Amazon Music</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="lyrics">
+      <div class="container">
+        <h2 class="section-title">Lyric Cards</h2>
+        <p class="section-sub">Shareable lyric frames in order. Tap any card to open full size. One-click share to socials.</p>
+        <div class="grid lyrics-grid">
+          <article class="card" data-title="You Do You — 01/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-01.png"><div class="card-img-wrap"><span class="card-num">01</span><a href="assets/lyrics/ydy-01.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-01.png" alt="Lyric 01" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-01.png" href="assets/lyrics/ydy-01.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 02/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-02.png"><div class="card-img-wrap"><span class="card-num">02</span><a href="assets/lyrics/ydy-02.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-02.png" alt="Lyric 02" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-02.png" href="assets/lyrics/ydy-02.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 03/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-03.png"><div class="card-img-wrap"><span class="card-num">03</span><a href="assets/lyrics/ydy-03.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-03.png" alt="Lyric 03" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-03.png" href="assets/lyrics/ydy-03.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 04/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-04.png"><div class="card-img-wrap"><span class="card-num">04</span><a href="assets/lyrics/ydy-04.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-04.png" alt="Lyric 04" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-04.png" href="assets/lyrics/ydy-04.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 05/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-05.png"><div class="card-img-wrap"><span class="card-num">05</span><a href="assets/lyrics/ydy-05.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-05.png" alt="Lyric 05" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-05.png" href="assets/lyrics/ydy-05.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 06/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-06.png"><div class="card-img-wrap"><span class="card-num">06</span><a href="assets/lyrics/ydy-06.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-06.png" alt="Lyric 06" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-06.png" href="assets/lyrics/ydy-06.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 07/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-07.png"><div class="card-img-wrap"><span class="card-num">07</span><a href="assets/lyrics/ydy-07.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-07.png" alt="Lyric 07" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-07.png" href="assets/lyrics/ydy-07.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 08/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-08.png"><div class="card-img-wrap"><span class="card-num">08</span><a href="assets/lyrics/ydy-08.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-08.png" alt="Lyric 08" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-08.png" href="assets/lyrics/ydy-08.png">Download</a></div></div></article>
+          <article class="card" data-title="You Do You — 09/9" data-text="You Do You by Soozhee | youdoyou.vercel.app" data-img="assets/lyrics/ydy-09.png"><div class="card-img-wrap"><span class="card-num">09</span><a href="assets/lyrics/ydy-09.png" target="_blank" rel="noopener"><img class="card-img" src="assets/lyrics/ydy-09.png" alt="Lyric 09" loading="lazy" /></a></div><div class="card-body"><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-09.png" href="assets/lyrics/ydy-09.png">Download</a></div></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">Explore the Song</h2>
+        <p class="section-sub">Explore the patterns, questions, and possibilities within You Do You.</p>
+        <div class="grid about-grid">
+          <article class="card card-wide" data-title="The Pattern — You Do You" data-text="You Do You by Soozhee. — youdoyou.vercel.app" data-img="assets/cards/ydy-card-01.png"><div class="card-img-wrap"><span class="card-num">01 / 04</span><a href="assets/cards/ydy-card-01.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/ydy-card-01.png" alt="The Pattern" loading="lazy" /></a></div><div class="card-body"><h3>The Pattern</h3><p>The pattern this song brings into view.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-card-01.png" href="assets/cards/ydy-card-01.png">Download</a></div></div></article>
+          <article class="card card-wide" data-title="The Mechanism — You Do You" data-text="You Do You by Soozhee. — youdoyou.vercel.app" data-img="assets/cards/ydy-card-02.png"><div class="card-img-wrap"><span class="card-num">02 / 04</span><a href="assets/cards/ydy-card-02.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/ydy-card-02.png" alt="The Mechanism" loading="lazy" /></a></div><div class="card-body"><h3>The Mechanism</h3><p>How the pattern keeps shaping what comes next.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-card-02.png" href="assets/cards/ydy-card-02.png">Download</a></div></div></article>
+          <article class="card card-wide" data-title="The Opening — You Do You" data-text="You Do You by Soozhee. — youdoyou.vercel.app" data-img="assets/cards/ydy-card-03.png"><div class="card-img-wrap"><span class="card-num">03 / 04</span><a href="assets/cards/ydy-card-03.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/ydy-card-03.png" alt="The Opening" loading="lazy" /></a></div><div class="card-body"><h3>The Opening</h3><p>The choice that creates a different opening.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-card-03.png" href="assets/cards/ydy-card-03.png">Download</a></div></div></article>
+          <article class="card card-wide" data-title="Listen Like a Remedy — You Do You" data-text="You Do You by Soozhee. — youdoyou.vercel.app" data-img="assets/cards/ydy-card-04.png"><div class="card-img-wrap"><span class="card-num">04 / 04</span><a href="assets/cards/ydy-card-04.png" target="_blank" rel="noopener"><img class="card-img" src="assets/cards/ydy-card-04.png" alt="Listen Like a Remedy" loading="lazy" /></a></div><div class="card-body"><h3>Listen Like a Remedy</h3><p>Notice what catches—and listen from there.</p><div class="share-bar"><button class="share-btn primary" onclick="shareCard(this)">Share</button><a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a><a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a><a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a><a class="share-btn" href="#" onclick="shareTo('email', this); return false;">Email</a><button class="share-btn" onclick="copyLink(this)">Copy</button><a class="share-btn" download="ydy-card-04.png" href="assets/cards/ydy-card-04.png">Download</a></div></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h2>You Do You.</h2>
+        <p>No Regret.</p>
+        <div class="share-bar" style="justify-content:center;">
+          <button class="share-btn primary" onclick="sharePage()">Share this page</button>
+          <button class="share-btn" onclick="copyPageLink()">Copy link</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p class="footer-brand">Sonic Remedy : Audiosensory Resonance</p>
+      <p>You Do You · Vocals, lyrics & composed by Soozhee · Produced by Caelverum Music</p>
+      <p class="fineprint">© Soozhee and Caelverum Music. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox"><div class="lightbox-inner"><button class="lightbox-close" aria-label="Close">×</button><img id="lightboxImg" src="" alt="Full size card" /></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
