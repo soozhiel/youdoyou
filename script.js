@@ -1,4 +1,4 @@
-const SITE_URL = 'https://youdoyou-mauve.vercel.app';
+const SITE_URL = 'https://youdoyou-soozhee.vercel.app';
 
 function getCardData(el) {
   const card = el.closest('.card');
